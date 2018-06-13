@@ -12,10 +12,10 @@ boton.addEventListener("click",()=> {
     const newTexto = document.createElement("div");
 //creo un elemento    
     const dondeVaElTexto = document.createElement("p");
-//le indico el tipo de elemento que es    
-    dondeVaElTexto.type = "text"
 //le digo que es un texto    
     let textoNuevo = document.createTextNode(comentario);
 //llamo al elemento padre
     dondeVaElTexto.appendChild(textoNuevo);
+    newTexto.appendChild(dondeVaElTexto);
+    fraseTwiteada.appendChild(newTexto);
 })
