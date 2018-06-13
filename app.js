@@ -12,10 +12,10 @@ boton.addEventListener("click",()=> {
     const newTexto = document.createElement("div");
 //creo un elemento    
     const dondeVaElTexto = document.createElement("p");
-//le digo que es un texto    
+//creo una variable que me diga que comentario es un texto
     let textoNuevo = document.createTextNode(comentario);
 //llamo al elemento padre
-    dondeVaElTexto.appendChild(textoNuevo);
-    newTexto.appendChild(dondeVaElTexto);
-    fraseTwiteada.appendChild(newTexto);
+    dondeVaElTexto.appendChild(textoNuevo);//p es hijo de comentario
+    newTexto.appendChild(dondeVaElTexto);//div es hijo de p
+    fraseTwiteada.appendChild(newTexto);//frase twiteada es hijo de div
 })
